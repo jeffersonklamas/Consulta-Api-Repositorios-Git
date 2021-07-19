@@ -10,7 +10,7 @@ export const Title = styled.h1`
     text-align: center;
     font-size: 2rem;
     font-family: sans-serif;
-    color: #333;
+    color: #fff;
 `;
 
 export const List = styled.ul`
@@ -21,7 +21,7 @@ export const List = styled.ul`
 `
 export const ListItem = styled.li`
     margin: .5rem 0;
-    background: #000;
-    color: #fff;
+    background: #D6BFD6;
+    color: #000;
     padding: .5rem;
 `;
