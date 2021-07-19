@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 import * as S from './styled';
-
 
 export default function Repositories() {
     const history = useHistory();
@@ -14,7 +13,7 @@ export default function Repositories() {
             setRepositories(repositoriesName);
             localStorage.clear();
         } else {
-            history.push('/')
+            history.push('/');
         }
     }, []);
 
@@ -29,6 +28,7 @@ export default function Repositories() {
                 }) 
                 }
             </S.List>
+            <S.LinkHome to="/">Voltar</S.LinkHome>
         </S.Container>
     )
 }
